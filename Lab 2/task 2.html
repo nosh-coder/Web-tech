@@ -1,16 +1,13 @@
 <html>
   <head>
+    <title>Student Login Form</title>
     <script src="index.js"></script>
   </head>
+
   <body>
-    <script>
-      document.write("<h1>Student Login Form :</h1>");
-      const a = 0.2;
-      const b = 0.7;
-      document.write("Sum is..", a + b);
-      console.log("Sum is..", a + b);
-    </script>
-    <form onsubmit="return collectData();">
+    <h1>Student Login Form:</h1>
+
+    <form onsubmit ="return collectData();">
       <table>
         <tr>
           <td>Student Email</td>
@@ -19,13 +16,13 @@
               type="text"
               placeholder="Enter your Email"
               id="email"
-              name=""
             />
           </td>
           <td>
-            <p id="emailErr" style="color: red"></p>
+            <p id="emailError" style="color: maroon"></p>
           </td>
         </tr>
+
         <tr>
           <td>Password</td>
           <td>
@@ -36,9 +33,10 @@
             />
           </td>
           <td>
-            <p id="passwordErr" style="color: red"></p>
+            <p id="passwordError" style="color: maroon"></p>
           </td>
         </tr>
+
         <tr>
           <td>
             <button type="submit">Submit</button>
@@ -46,5 +44,8 @@
         </tr>
       </table>
     </form>
+
+    <p id="wrongCount" style="color: green; font-weight: bolder;"></p>
+
   </body>
 </html>
