@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Form</title>
+    <script src = "index.js"></script>
+</head>
+<body>
+    <h1>Submission Form: </h1>
+        <form onsubmit = "return collectData();">
+            <table>
+                <tr>
+                    <td>First Name </td>
+                    <td>
+                        <input type = "text" placeholder="Enter your name" id="Fname" minlength="2" required>
+                    </td>
+                    <td>
+                        <p id ="Ferror" style = "color: hsl(84, 83%, 49%)"> </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name </td>
+                    <td>
+                        <input type = "text" placeholder="Enter your name" id="Lname" min-length="2" required>
+                    </td>
+                    <td>
+                        <p id = "Lerror" style = "color:hsl(240, 75%, 65%)"> </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type = "submit">submit</button>
+                    </td>
+                </tr>
+            </table> 
+        </form>       
+</body>
+</html>
