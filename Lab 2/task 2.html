@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Student Login Form</title>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <h1>Student Login Form:</h1>
+
+    <form onsubmit ="return collectData();">
+      <table>
+        <tr>
+          <td>Student Email: </td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your Email"
+              id="email"
+            />
+          </td>
+          <td>
+            <p id="emailError" style="color: maroon"></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              id="password"
+            />
+          </td>
+          <td>
+            <p id="passwordError" style="color: maroon"></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="submit" style = "background-color:blueviolet"; "font-weight: bolder"; >Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <p id="wrongCount" style="color: green; font-weight: bolder;"></p>
+
+  </body>
+</html>
