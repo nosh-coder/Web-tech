@@ -16,7 +16,6 @@ unset($_SESSION['userNameErr']);
 unset($_SESSION['fullNameErr']);
 unset($_SESSION['emailErr']);
 unset($_SESSION['phoneNumberErr']);
-
 ?>
 
 <html>
