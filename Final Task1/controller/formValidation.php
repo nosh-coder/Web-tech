@@ -77,6 +77,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     echo "Email: " . $email . "<br>";
     echo "Phone Number: " . $phoneNumber . "<br><br>";
 
-    echo "<a href='../view/form.php'>Back to Form</a>";
+    echo "<a href='../view/form.php'>Back on Form</a>";
 }
 ?>
